@@ -26,7 +26,7 @@ flowchart TD
     B --> C[Transformation]
     C --> D[DataFrame Pandas]
     D --> E[Fichier CSV]
-    E --> F[Base SQLite]
+    D --> F[Base SQLite]
     F --> G[Requêtes SQL]
 ```
 
