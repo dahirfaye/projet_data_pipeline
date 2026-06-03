@@ -20,7 +20,7 @@ Ce projet a pour objectif de créer unn pipeline de données permettant :
 
 ## Architecture
 
-'''mermaid
+```mermaid
 flowchart TD
     A[open-API météo] --> B[Extraction Python]
     B --> C[Transformation]
@@ -28,7 +28,7 @@ flowchart TD
     D --> E[Fichier CSV]
     E --> F[Base SQLite]
     F --> G[Requêtes SQL]
-'''
+```
 
 ## Auteur 
 
