@@ -22,7 +22,7 @@ Ce projet a pour objectif de créer unn pipeline de données permettant :
 
 ```mermaid
 flowchart TD
-    A[open-API météo] --> B[Extraction Python]
+    A[Open-Meteo API] --> B[Extraction Python]
     B --> C[Transformation]
     C --> D[DataFrame Pandas]
     D --> E[Fichier CSV]
