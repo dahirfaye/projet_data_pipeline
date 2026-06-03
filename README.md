@@ -2,7 +2,7 @@
 
 ## description
 
-Ce projet a pour objectif de créer unn pipeline de données permettant : 
+Ce projet a pour objectif de créer un pipeline de données permettant : 
 
 - l'extraction de données météorologiques depuis une API
 - la transformation des données JSON
