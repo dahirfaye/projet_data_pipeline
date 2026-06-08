@@ -30,6 +30,18 @@ flowchart TD
     F --> G[Requêtes SQL]
 ```
 
+## SQL queries
+
+### Hottest city
+SELECT city, temperature 
+FROM weather 
+ORDER BY temperature DESC
+LIMIT 1;
+
+### Average temperature
+SELECT AVG(temperature)
+FROM weather;
+
 ## Auteur 
 
 Cheikh Dahir FAYE
