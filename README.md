@@ -39,11 +39,20 @@ FROM weather
 ORDER BY temperature DESC
 LIMIT 1;
 ```
+Résultat : 
+```text
+Marseille | 20.9°C
+```
+
 
 ### Average temperature
 ```sql
-SELECT AVG(temperature)
+SELECT AVG(temperature) AS average_temperature
 FROM weather;
+```
+Résultat : 
+```text
+20.0°C
 ```
 
 ## Auteur 
