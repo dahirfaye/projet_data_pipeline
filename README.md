@@ -33,14 +33,18 @@ flowchart TD
 ## SQL queries
 
 ### Hottest city
+```sql
 SELECT city, temperature 
 FROM weather 
 ORDER BY temperature DESC
 LIMIT 1;
+```
 
 ### Average temperature
+```sql
 SELECT AVG(temperature)
 FROM weather;
+```
 
 ## Auteur 
 
