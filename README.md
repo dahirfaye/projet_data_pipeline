@@ -55,6 +55,20 @@ Résultat :
 20.0°C
 ```
 
+### Classement des villes par temperature
+```sql
+SELECT city, temperature
+FROM weather
+ORDER BY temperature DESC;
+```
+Résultat:
+```text
+Marseille | 20.9°C
+Lyon      | 20.3°C
+Toulouse  | 20.1°C
+Paris     | 18.7°C
+```
+
 ## Auteur 
 
 Cheikh Dahir FAYE
