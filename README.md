@@ -69,6 +69,15 @@ Toulouse  | 20.1°C
 Paris     | 18.7°C
 ```
 
+## Future improvements
+
+- Historical weather data collection
+- Automated daily data ingestion
+- Docker containerization
+- Apache Airflow orchestration
+- Data visualization dashboard
+
+
 ## Auteur 
 
 Cheikh Dahir FAYE
