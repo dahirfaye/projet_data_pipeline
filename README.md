@@ -1,4 +1,4 @@
-# Projet de pipeline de données météo
+# Weather Data Pipeline Project
 
 ## description
 
@@ -11,12 +11,18 @@ Ce projet a pour objectif de créer un pipeline de données permettant :
 - le stockage dans une base SQLite
 - l'interrogation des données avec SQL
 
-## Technologies utilisées
+## Technologies 
 
 - Python
 - Requests
 - Pandas
 - SQLite
+
+### Planned technologies
+
+- Docker
+- Apache Airflow
+- Power BI
 
 ## Architecture
 
@@ -39,7 +45,7 @@ FROM weather
 ORDER BY temperature DESC
 LIMIT 1;
 ```
-Résultat : 
+Result : 
 ```text
 Marseille | 20.9°C
 ```
@@ -50,18 +56,18 @@ Marseille | 20.9°C
 SELECT AVG(temperature) AS average_temperature
 FROM weather;
 ```
-Résultat : 
+Result : 
 ```text
 20.0°C
 ```
 
-### Classement des villes par temperature
+### Ranking of cities by temperature
 ```sql
 SELECT city, temperature
 FROM weather
 ORDER BY temperature DESC;
 ```
-Résultat:
+Result:
 ```text
 Marseille | 20.9°C
 Lyon      | 20.3°C
@@ -97,7 +103,7 @@ Paris     | 18.7°C
 3. Exécuter les cellules dans l'ordre
 4. Les données sont extraites depuis l'API Open-Meteo puis stockées dans SQLite
 
-## Auteur 
+## Author
 
 Cheikh Dahir FAYE
 
