@@ -69,14 +69,33 @@ Toulouse  | 20.1°C
 Paris     | 18.7°C
 ```
 
+## Historical Data Exemple
+
+|  city | collection_date | temperature |
+|-------|-----------------|-------------|
+| Lyon  |   2026-06-09    |    19.8°C   |
+| Lyon  |   2026-06-10    |    19.8°C   |
+| Paris |   2026-06-09    |    17.6°C   |
+| Paris |   2026-06-10    |    17.6°C   |
+
+*Les dates ont été simulées afin de démontrer le mécanisme d'historisation des données.*
+
 ## Future improvements
 
-- Historisation des données météo
 - Automatisation de la collecte quotidienne
 - Conteneurisation avec Docker
 - Orchestration avec Apache Airflow 
 - Création d'un tableau de bord de visualisation
 
+## Installation 
+
+1. Ouvrir le notebook dans Google Colab
+2. Installer les dépendances nécessaires :
+   ```python
+   pip install pandas requests
+   ```
+3. Exécuter les cellules dans l'ordre
+4. Les données sont extraites depuis l'API Open-Meteo puis stockées dans SQLite
 
 ## Auteur 
 
