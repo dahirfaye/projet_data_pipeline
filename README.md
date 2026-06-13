@@ -1,6 +1,6 @@
 # Weather Data Pipeline Project
 
-## description
+## Description
 
 Ce projet a pour objectif de créer un pipeline de données permettant : 
 
@@ -18,7 +18,7 @@ Ce projet a pour objectif de créer un pipeline de données permettant :
 - Pandas
 - SQLite
 
-### Planned technologies
+### Planned Technologies
 
 - Docker
 - Apache Airflow
@@ -36,9 +36,9 @@ flowchart TD
     F --> G[Requêtes SQL]
 ```
 
-## SQL queries
+## SQL Queries
 
-### Hottest city
+### Hottest City
 ```sql
 SELECT city, temperature 
 FROM weather 
@@ -50,8 +50,7 @@ Result :
 Marseille | 20.9°C
 ```
 
-
-### Average temperature
+### Average Temperature
 ```sql
 SELECT AVG(temperature) AS average_temperature
 FROM weather;
@@ -61,7 +60,7 @@ Result :
 20.0°C
 ```
 
-### Ranking of cities by temperature
+### Ranking Of Cities By Temperature
 ```sql
 SELECT city, temperature
 FROM weather
@@ -75,6 +74,32 @@ Toulouse  | 20.1°C
 Paris     | 18.7°C
 ```
 
+### Most Humid City
+
+```sql
+SELECT city, humidity
+FROM weather
+ORDER BY humidity DESC
+LIMIT 1;
+```
+Result : 
+```text
+Marseille | 47
+```
+
+### Windiest City
+
+```sql
+SELECT city, wind_speed
+FROM weather
+ORDER BY wind_speed DESC
+LIMIT 1;
+```
+Result : 
+```text
+Paris | 10.5
+```
+
 ## Historical Data Exemple
 
 |  city | collection_date | temperature |
@@ -86,7 +111,7 @@ Paris     | 18.7°C
 
 *Les dates ont été simulées afin de démontrer le mécanisme d'historisation des données.*
 
-## Future improvements
+## Future Improvements
 
 - Automatisation de la collecte quotidienne
 - Conteneurisation avec Docker
